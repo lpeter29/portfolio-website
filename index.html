@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="scripts.js" defer></script>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+  
+<body>
+  <!-- ========================= MAIN CONTAINER ========================= -->
+  <div class="main-container">
+    
+    <!-- ========================= HEADER SECTION ========================= -->
+    <div class="header">
+      <div class="header-left">
+          <img src="icon.png" alt="Profile Picture" class="profile-pic">
+          <h1 class="header-name">CipherPaul</h1>
+      </div>
+      <nav class="nav">
+          <a href="#home" class="nav-link">Home</a>
+          <a href="#about" class="nav-link">About</a>
+          <a href="#portfolio" class="nav-link">Portfolio</a>
+          <a href="#contact" class="nav-link">Contact</a>
+      </nav>
+      <div class="hamburger-menu">
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+      </div>
+      <div class="mobile-nav">
+        <a href="#home" class="mobile-nav-link">Home</a>
+        <a href="#about" class="mobile-nav-link">About</a>
+        <a href="#portfolio" class="mobile-nav-link">Portfolio</a>
+        <a href="#contact" class="mobile-nav-link">Contact</a>
+    </div>  
+  </div>
+      
+    <!-- ========================= HOME SECTION ========================= -->
+    <section id="home" class="section home">
+      <div class="home-content">
+        <div class="home-text">
+          <h1 class="home-title">Hey there!</h1>
+          <h2 class="home-subtitle">I'm <span class="highlight">Peter Paul F. Eclavea</span></h2>
+          <p class="home-description">
+            A college student deeply interested in Programming. This portfolio represents a handpicked selection of my work, 
+            projects, and experiences, highlighting my skills and creativity.
+          </p>
+          <div class="button-group">
+            <button id="download-cv" class="custom-button">Download CV</button>
+            <button id="contact-me" class="custom-button">Contact Me</button>
+          </div>
+        </div>
+        <div class="home-image">
+          <img src="E-SPORTS_PETER PAUL F. ECLAVEA.jpeg" alt="Profile Picture" class="profile-pic-large">
+        </div>
+      </div>
+    </section>
+    <hr>
+
+    <!-- ========================= ABOUT SECTION ========================= -->
+    <section id="about" class="section about">
+      <div class="about-content">
+        <div class="about-text">
+          <h2 class="section-title">About Me</h2>
+          <p class="section-description">Within this portfolio, you'll find a collection of projects showcasing my skills 
+            using HTML, CSS, and JavaScript.</p>
+            <br>
+          <div class="button-group">
+            <button id="read-more" class="custom-button">Read More</button>
+            <button id="lets-talk" class="custom-button">Let's Talk</button>
+          </div>
+        </div>
+        <div class="about-image">
+          <img src="Figma1 1.png" alt="About Me Picture" class="profile-pic-large">
+        </div>
+      </div>
+    </section>
+    <hr>    
+
+    <!-- ========================= PORTFOLIO SECTION ========================= -->
+    <section id="portfolio" class="section portfolio">
+      <div class="section-content">
+        <h2 class="section-title">Portfolio</h2>
+      </div>
+      <div class="portfolio-projects">
+        <div class="project-card">
+          <a href="https://lpeter29.github.io/ipt101-calculator-app/"
+          target="_blank">
+          <img src="calculator.png" alt="Project Screenshot" class="project-image">
+          </a> 
+          <p class="project-description">
+            Calculator App 
+          </p>
+          <p class="project-description">
+            using HTML and CSS
+          </p>
+        </div>
+        <div class="project-card">
+          <a href="https://lpeter29.github.io/rock-paper-scissor/"
+          target="_blank">
+          <img src="RPS.png" alt="Project Screenshot" class="project-image">
+          </a> 
+          <p class="project-description">
+            Rock-Paper-Scissor 
+          </p>
+          <p class="project-description">
+            using HTML, CSS and JavaScript
+          </p>
+        </div>
+      </div>
+      <div class="portfolio-projects">
+        <div class="project-card">
+          <a href="https://lpeter29.github.io/online-resume/"
+          target="_blank">
+          <img src="Resume.png" alt="Project Screenshot" class="project-image">
+          </a> 
+          <p class="project-description">
+            Online Resume
+          </p>
+          <p class="project-description">
+            using HTML and CSS
+          </p>
+        </div>
+        <div class="project-card">
+          <a href="https://www.figma.com/design/afpDk86HjbRmfwtWAv6ROt/ASSIGNMENT-%232_ECLAVEA?node-id=0-1&t=83sp2s0pV6yRqWm7-1"
+          target="_blank">
+          <img src="Desktop - 1.png" alt="Project Screenshot" class="project-image">
+          </a> 
+          <p class="project-description">
+            Portfolio Website
+          </p>
+          <p class="project-description">
+            using Figma
+          </p>
+        </div>
+      </div>
+    </div>
+    </section>
+    <hr>
+
+    <!-- ========================= CONTACT SECTION ========================= -->
+    <section id="contact" class="section contact">
+      <div class="section-content">
+        <h2 class="section-title">Contact</h2>
+      </div>
+      <div class="contact-form-container">
+        <form class="contact-form">
+          <div class="form-control">
+            <input type="text" required>
+            <label><span>Company/Owner Name</span></label>
+          </div>
+          <div class="form-control">
+            <input type="text" required>
+            <label><span>Email</span></label>
+          </div>
+          <div class="form-control">
+            <textarea required></textarea>
+            <label><span>Description/Notes</span></label>
+          </div>
+          <button id="submit-form" type="submit" class="custom-button">Submit</button>
+        </form>
+        <div class="social-links">
+          <a href="https://www.facebook.com/peterpaul.eclavea?mibextid=ZbWKwL" target="_blank" class="nav-link"><i class="fab fa-facebook"></i> Facebook</a>
+          <a href="https://www.instagram.com/lpeter_29/" target="_blank" class="nav-link"><i class="fab fa-instagram"></i> Instagram</a>
+          <a href="#" id="copy-number" class="nav-link"><i class="fas fa-phone"></i> Contact Number</a>
+          <a href="https://github.com/lpeter29" target="_blank" class="nav-link"><i class="fab fa-github"></i> Github</a>
+        </div>
+  
+      </div>
+    </section>
+    <hr>
+
+    <!-- ========================= FOOTER SECTION ========================= -->
+    <footer class="footer">
+      <p>Copyright &copy; 2021 All Rights Reserved</p>
+    </footer>
+    <hr>
+  </div>
+</body>
+</html>

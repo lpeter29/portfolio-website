@@ -224,6 +224,12 @@
     }
 
     @media (max-width: 768px) {
+
+      .home-content {
+        flex-direction: column; /* Stack text and image vertically */
+        text-align: center;
+        }
+
         .home-title {
             font-size: 2rem;
         }
@@ -271,12 +277,31 @@
         font-size: 1.1rem;
         line-height: 1.6;
     }
+
+    /* Media Queries for About Section */
+    @media (max-width: 768px) {
+      .about-content {
+          flex-direction: column; /* Stack text and image vertically */
+          text-align: center;
+      }
+      .section-title {
+          font-size: 2rem;
+      }
+      .section-description {
+          font-size: 1rem;
+      }
+      .profile-pic-large {
+          max-width: 350px;
+      }
+    }
+
     /* ========================= PORTFOLIO SECTION   ========================= */
     .portfolio-projects {
-        margin-top: 0px;
-        display: flex;
-        gap: 25px;
-        justify-content: center;
+    margin-top: 0px;
+    display: flex;
+    gap: 25px;
+    justify-content: center;
+    flex-wrap: wrap; /* Wrap projects in smaller screens */
     }
 
     .project-card {
@@ -285,17 +310,31 @@
         padding: 20px;
         border-radius: 25px;
         text-align: center;
+        flex-basis: 45%; /* Take up about 45% of the container width */
+        margin: 10px;
     }
 
     .project-image {
         border-radius: 8px;
-        height: 150px;
+        height: 100%px;
+        width: 100%;
     }
 
     .project-description{
         background: rgb(55,51,53);
         background: linear-gradient(90deg, rgba(55,51,53,1) 0%, 
         rgba(102,119,143,1) 100%, rgba(148,187,233,1) 100%);
+    }
+
+    /* Media Queries for Portfolio Section */
+    @media (max-width: 768px) {
+        .portfolio-projects {
+            flex-direction: column; /* Stack projects vertically */
+            align-items: center;
+        }
+        .project-card {
+            flex-basis: 100%; /* Take up full width on smaller screens */
+        }
     }
 
     /* ========================= CONTACT SECTION   ========================= */
@@ -395,12 +434,13 @@
     .custom-button {
         background-color: #0073BB;
         color: #F4F4F9;
-        padding: 12px 24px;
+        padding: 1rem 2rem;
         border-radius: 8px;
         box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
         font-size: 1rem;
         font-weight: 600;
+        cursor: pointer;
     }
 
     .custom-button:hover {
